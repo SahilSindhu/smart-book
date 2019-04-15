@@ -1,0 +1,107 @@
+
+.top-strip-cont{
+    padding:0;
+    position: relative;
+    z-index: 10;
+    background: rgb(40,40,40);
+}
+
+.lang-dropdown-li,.dollar-dropdown-li{
+    position: relative;
+    ul{
+        position: absolute;
+    }
+}
+.top-strip-row{
+    background: rgb(40,40,40);;
+    color:white;
+    // opacity: 0.9;
+    .top-strip-ul{
+        display: inline;
+        padding:0;
+        li{
+
+            display: inline;
+        }
+    }
+    .lang-dropdown-li{
+        img{
+            vertical-align: initial;
+        }
+    }
+    .top-strip-col-1{
+        display: flex;
+        justify-content: space-between;
+        span{
+            padding-left:4px;
+        }
+        ul{
+            margin:11px 0;
+            
+            li{
+                transition: 0.4s;
+                padding-left: 8px;
+                
+                padding-right: 10px;
+            //    opacity: 0.8;
+               transition:0.3s;
+                font-size: 14px;
+               &:hover{
+                color:rgba(255,255,255,1);
+               }
+            }
+            .fa{
+                font-size: 14px;
+           
+            }
+            @media(max-width:600px){
+                padding-left:5px;
+            }
+        }
+        .top-strip-ul-1{
+            color:rgba(255,255,255,0.8);
+        }
+        .top-strip-ul-2{
+            span{
+                color:rgba(255,255,255,0.8);
+                transition: color 0.3s;
+                margin-left: 3px;
+                &:hover{
+                    color:rgba(255,255,255,1);
+                }
+            }
+           
+        }
+       
+        .top-strip-setting{
+            display: none;
+        }
+        .top-strip-dropdown-menu{
+            z-index:999;
+            background: rgba(255,255,255,1);
+            opacity:1 !important;
+            li{
+                opacity: 1 !important;
+            }
+        }
+        @media(max-width:768px){
+           
+            .top-strip-setting{
+                display: inline;
+                .top-strip-dropdown-menu{
+                    left:-55px;
+                }
+            }
+            .top-strip-ul-2{
+                display: none;
+            }
+            .top-strip-ul-1{
+                padding:0;
+                margin:10px auto;
+            }
+          
+        }
+
+        
+    }
+}

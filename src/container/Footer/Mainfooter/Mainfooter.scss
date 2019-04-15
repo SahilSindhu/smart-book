@@ -1,0 +1,56 @@
+$main-theme:lightgreen;
+.main-footer-container{
+    padding: 0;
+    margin-top:60px;
+    @media(max-width:768px){
+        margin-top:30px;
+    }
+    @media(max-width:600px){
+        margin-top:0px;
+    }
+}
+.main-footer{
+    width: 100%;
+    margin: 0;
+    background: rgb(40,40,40);
+    color:white;
+    text-align:center;
+    padding:10px 0;
+    
+    font-weight: 100;
+    letter-spacing:1px;
+    @media(min-width:768px){
+        padding:35px 0;
+    }
+    @media(min-width:992px){
+        padding:65px 0 60px 0;
+    } 
+    .footer-para{
+        opacity:0.8;
+        font-size: 14px;
+        font-weight: 100;
+
+    }
+    .footer-payment-options{
+        margin-top:30px;
+        margin-bottom:35px;
+        padding:40px 0;
+        @media(max-width:768px){
+            padding:20px 0;
+            margin-top:15px;
+        margin-bottom:15px;
+        }
+        @media(min-width:540px){
+            padding:5px 0;
+        }
+    }
+    .footer-copyright{
+        span{
+            color:$main-theme
+        }
+    }
+    @media(max-width:450px){
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
