@@ -1,0 +1,36 @@
+$main-theme:rgb(98,171,0);
+$money-theme:rgb(141, 194, 71);
+$discount-color:rgb(189,0,4);
+
+.banner-dropdown{
+    .banner-dropdown-menu{
+        width: 100%;
+        
+    }
+    @media(min-width:992px){
+        display: none;
+    }
+   
+    .categories-banner-setting{
+        display: flex;
+        justify-content: space-between;
+        background: black;
+        padding-right: 10px;
+        padding-left:10px;
+        span{
+            font-size: 14px;
+            color:white;
+            margin: auto 0;
+        }
+    }
+    .icon-bar-holder{
+        display: inline-block;
+    }
+    .icon-bar{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+       
+    }
+}

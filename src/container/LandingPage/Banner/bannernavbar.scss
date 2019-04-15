@@ -1,0 +1,65 @@
+$main-theme:rgb(98,171,0);
+$money-theme:rgb(141, 194, 71);
+$discount-color:rgb(189,0,4);
+
+.banner-navbar{
+    margin-bottom: 16px;
+    .navbar-brand{
+        padding:0;
+        .navbar-headphone{
+        }
+        .fa-headphones-alt{
+            font-size: 34px;
+            color:$main-theme;
+        }
+        .service24{
+            display: inline-block;
+            font-size: 14px;
+            vertical-align: top;
+            padding-left: 10px;
+            p:nth-child(1){
+                opacity: 0.8;
+                margin-bottom: 0;
+            }
+            p:nth-child(2){
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        }
+    }
+    a{
+        color:black;
+    }
+    @media(max-width:992px){
+        display: none;
+    }
+    li:nth-child(1){
+        a{
+            color:$main-theme;
+        }
+        
+    }
+    li{
+        &:focus{
+            outline: none;
+        }
+        a{
+            font-size:16px;
+            font-weight: 100;
+            transition:color .4s;
+            @media(max-width:1199px){
+                padding-left:5px;
+                padding-right:5px;
+                font-size:15px;
+            }
+            &:hover{
+                background: transparent;
+                color:$main-theme;
+            }
+            &:focus{
+                background: white;
+            }
+        }
+        
+    }
+}
