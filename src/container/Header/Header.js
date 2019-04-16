@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
 import './Header.scss';
 class Header extends Component{
+  constructor(){
+    super()
+    this.state={
+
+    }
+   
+    
+
+  }
+
     render(){
         return(
             <header id='header'>
@@ -21,16 +32,7 @@ class Header extends Component{
                         </div>
                     </form>
                     </div>
-                        {/* <!-- <div class="temp-search">
-                            <div class="col-xs-7 col-sm-7 hidden-md hidden-lg search-group">
-                                <form class="navbar-form">
-                                    <div class="form-group">
-                                    <input placeholder="Search our catalog" type="text" class="form-control search-bar">
-                                    <button class="btn btn-primary search-button"><i class="fa fa-search"></i></button>
-                                    </div>
-                                </form>
-                                </div>
-                        </div> --> */}
+                      
 
       
         <div class="col-sm-12 col-md-3 cart-info">

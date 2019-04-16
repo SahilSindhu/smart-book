@@ -26,25 +26,25 @@ export default class Sidebar extends Component {
                                   <ul>
                                     <li><h3>Product</h3></li>
                                     <li>
-                                        <label className="container">Fiction
+                                        <label>Fiction
                                             <input type="checkbox" />
                                             <span className="checkmark"></span>
                                           </label>
                                     </li>
                                     <li>
-                                        <label className="container">Fiction
+                                        <label>Fiction
                                             <input type="checkbox" />
                                             <span className="checkmark"></span>
                                           </label>
                                     </li>
                                     <li>
-                                        <label className="container">Fiction
+                                        <label>Fiction
                                             <input type="checkbox" />
                                             <span className="checkmark"></span>
                                           </label>
                                     </li>
                                     <li>
-                                        <label className="container">Fiction
+                                        <label>Fiction
                                             <input type="checkbox" />
                                             <span className="checkmark"></span>
                                           </label>
@@ -53,25 +53,25 @@ export default class Sidebar extends Component {
                                   <ul>
                                       <li><h3>Product</h3></li>
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox" />
                                               <span className="checkmark"></span>
                                             </label>
                                       </li>
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox" />
                                               <span className="checkmark"></span>
                                             </label>
                                       </li>
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox" />
                                               <span className="checkmark"></span>
                                             </label>
                                       </li>
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox" />
                                               <span className="checkmark"></span>
                                             </label>
@@ -81,25 +81,25 @@ export default class Sidebar extends Component {
                                       <li><h3>Product</h3></li>
                                      
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox" />
                                               <span className="checkmark"></span>
                                             </label>
                                       </li>
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox" />
                                               <span className="checkmark"></span>
                                             </label>
                                       </li>
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox"/>
                                               <span className="checkmark"></span>
                                             </label>
                                       </li>
                                       <li>
-                                          <label className="container">Fiction
+                                          <label>Fiction
                                               <input type="checkbox"/>
                                               <span className="checkmark"></span>
                                             </label>
