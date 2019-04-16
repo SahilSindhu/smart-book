@@ -1,0 +1,11 @@
+.main-content-container{
+    box-sizing: border-box;
+    overflow: hidden; 
+    .main-content{
+        display: flex;
+        // align-items: strech;
+        padding:25px 0 0 0;
+        // width:100%;
+        box-sizing: border-box;
+    }
+}

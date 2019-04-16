@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Sidebar from './Sidebar/Sidebar'
 import Banner from './Banner/Banner'
+import './LandingPage.scss'
 export default class LandingPage extends Component {
   render() {
     return (

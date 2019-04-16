@@ -1,0 +1,88 @@
+$main-theme:rgb(98,171,0);
+$money-theme:rgb(141, 194, 71);
+$discount-color:rgb(189,0,4);
+.delivery-strip{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-align: center;
+    .delivery-strip-item{
+       width:24%;
+        display: flex;
+        flex-direction: row;
+        border:2px solid lightgray;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 2px;
+        max-height: 100%;
+        vertical-align: middle;
+        cursor: pointer;
+        @media(max-width:992px){
+            width:48%;
+            margin-top:5px;
+        }
+        @media(max-width:600px){
+            width:100%;
+            margin-top:5px;
+        }
+        &:hover{
+           
+            box-shadow: 0 0px 1px 0 rgba(0,0,0,0.4)
+        }
+        .strip-item-logo{
+            text-align: center;
+            color:white;
+            margin: auto 0;
+            //  padding-top:18px ;
+
+            width: 30%;
+            .fa {
+                font-size: 24px;
+                text-align: center;
+                text-decoration: none;
+                height: 100%;
+                vertical-align: middle;
+              }
+              
+              .fa:hover {
+                  opacity: 0.7;
+
+              }
+              
+              i{
+                background: white;
+                color: $main-theme;
+                transition:0.4s;
+                
+                
+              }
+            
+        }
+        .strip-item-info{
+            width: 70%;
+            text-align: left;
+            // margin-left: 5px;
+            // padding: 5px;
+            .strip-info-Shiping{
+                    // font-size:14px
+                font-size: 16px; 
+                margin-bottom: 0;
+            }
+            .strip-info-rating{
+                opacity:0.8;
+                margin-bottom: 0;
+               @media(max-width:450px){
+                font-size:16px
+               }
+               
+            }
+            @media(max-width:450px){
+                font-size:16px
+            }
+        }
+    }
+}
