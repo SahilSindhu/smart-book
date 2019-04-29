@@ -10,7 +10,7 @@ class Topstrip extends Component{
                     <div className="col-xs-12 top-strip-col-1">
                       <ul className="top-strip-ul top-strip-ul-1">
                         <li className="lang-dropdown-li">
-                          <img className="dropdown-toggle" data-toggle="dropdown" src={require('../../assets/img/1.jpg')} alt="image" /> <span className="dropdown-toggle" data-toggle="dropdown">English</span> <i className="dropdown-toggle fa fa-angle-down fa-down-icon" data-toggle="dropdown"></i>
+                          <img className="dropdown-toggle" data-toggle="dropdown" src={require('../../../../assets/img/1.jpg')} alt="image" /> <span className="dropdown-toggle" data-toggle="dropdown">English</span> <i className="dropdown-toggle fa fa-angle-down fa-down-icon" data-toggle="dropdown"></i>
                           <ul className="dropdown-menu  top-strip-dropdown-menu-usd">
                             <li><a tabindex="-1" href="#">ENGLISH</a></li>
                             <li><a tabindex="-1" href="#">GERMAN</a></li>

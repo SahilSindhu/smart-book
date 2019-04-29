@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import './bannernavbar.scss'
+import './bannernavbar.scss';
+import { Link, Route, Switch } from 'react-router-dom';
 export default class bannernavbar extends Component {
   render() {
     return (
@@ -23,12 +24,13 @@ export default class bannernavbar extends Component {
           <div className="collapse navbar-collapse" id="myNavbar">
             
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">DELIVERY</a></li>
-              <li><a href="#">LEGAL NOTICE</a></li>
-              <li><a href="#">SECURE PAYMENT</a></li>
-              <li><a href="#">ABOUT US</a></li>
+              <li><Link exact to="/">HOME</Link></li>
+              <li><Link to="/products">PRODUCTS</Link></li>
+              <li><Link to="/legal">LEGAL NOTICE</Link></li>
+              <li><Link to="/secure">SECURE PAYMENT</Link></li>
+              <li><Link to="/about-us">ABOUT US</Link></li>
             </ul>
+            {/* <Route path="/" component={}/> */}
           </div>
         </div>
       </nav>

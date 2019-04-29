@@ -11,7 +11,7 @@ class Mainfooter extends Component{
                         <p>suspandise um avtoer gause thee .Menu span rise hokage. tu main raikage the rise</p>
                     </div>
                     <div className="footer-payment-options">
-                        <img src={require('../../../assets/img/payment.png')}alt="img" />
+                        <img src={require('../../../../../assets/img/payment.png')}alt="img" />
                     </div>
                     <div className="footer-copyright">
                         <p>Copyright &copy;<span>Postthemes.</span>All right reserved</p>
