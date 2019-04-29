@@ -45,7 +45,7 @@ class Header extends Component{
                 <div class="cart-content">
                   <p class="info-para">My shoping cart<span class="zero-sign">0</span></p>
                   <p class="dropdown-toggle price-para" data-toggle='dropdown'>$<span class="main-price-show">0.00</span><i class="fa fa-angle-down fa-down-icon"></i><br /><span></span></p>
-                  <CartDropdown cartValue={this.props.cartValue}/>
+                  <CartDropdown stateValue={this.props.stateValue} handleIncrement={()=>this.props.handleIncrement()} handleDecriment={()=>this.props.handleDecriment} />
                
                 
                 </div>
