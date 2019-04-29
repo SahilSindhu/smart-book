@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class CartDropdown extends Component {
    
-    
+   
   render() {
       const {cartData,price,quantity}=this.props.stateValue
       console.log(cartData,price,quantity)
@@ -23,7 +23,7 @@ export default class CartDropdown extends Component {
                         <div className="image-div"><img src={e[1]}/></div>
                         
                         <div className="title-div"><p>{e[0]}</p></div>
-                        <div className="mutate-number"><span className="sub-sign">-</span><span className="item-added">{quantity}</span><button  className="add-sign">+</button></div>
+                        <div className="mutate-number"><span className="sub-sign">-</span><span className="item-added">{quantity}</span><button onClick={this.props.handleIncrement} className="add-sign">+</button></div>
                         <div className="item-price">{price}</div>
                         </div>
                            

@@ -58,12 +58,13 @@ class Home extends Component{
     }
     componentDidMount(){
         this.cartHandler();
+        
     }
     render(){
         return(
                <>
                 <Topstrip />
-                <Header stateValue={this.state} handleIncrement={this.incriment} handleDecriment={this.decriment}/>
+                <Header stateValue={this.state} handleIncrement={this.increment} handleDecriment={this.decriment}/>
                 <LandingPage />
                 <BottomBannerStrip />
                 <Mosiac />
