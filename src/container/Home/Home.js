@@ -12,9 +12,31 @@ class Home extends Component{
         super();
         this.state={
             cartData:[],
+            price:23,
+            quantity:1
           }
     }
-    cartHandler(){
+    increment=()=>{
+        let price=this.state.price;
+        let quantity=this.state.quantity;
+        price=price+23;
+        quantity+=1;
+        this.setState({
+          price:price,
+          quantity:quantity
+        })
+    }
+    decriment=()=>{
+      let price=this.state.price;
+      let quantity=this.state.quantity;
+      price=price-23;
+      quantity-=1;
+      this.setState({
+        price:price,
+        quantity:quantity
+      })
+  }
+    cartHandler=()=>{
         document.querySelectorAll('.sell-page-item').forEach((el)=>{
             el.querySelector('.shop-strip').addEventListener('click',(e)=>{
               // console.log(e.target)
@@ -36,12 +58,13 @@ class Home extends Component{
     }
     componentDidMount(){
         this.cartHandler();
+        
     }
     render(){
         return(
                <>
                 <Topstrip />
-                <Header cartValue={this.state.cartData}/>
+                <Header stateValue={this.state} handleIncrement={this.increment} handleDecriment={this.decriment}/>
                 <LandingPage />
                 <BottomBannerStrip />
                 <Mosiac />
