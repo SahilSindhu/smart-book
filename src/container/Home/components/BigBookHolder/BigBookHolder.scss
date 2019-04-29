@@ -1,0 +1,157 @@
+$main-theme:rgb(98,171,0);
+$money-theme:rgb(141, 194, 71);
+$discount-color:rgb(189,0,4);
+.sell-page-column{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 45px;
+    overflow: hidden;
+   
+    .sell-page-main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // padding-left:-15px;
+        // padding-right:-15px;
+       justify-content: space-between;
+      
+        .sell-page-item{
+            text-align: center;
+            width:100%;
+            cursor: pointer;
+            overflow: hidden;
+           
+            @media(max-width:450px){
+                font-size: 16px;
+                width:100%; 
+                
+            }
+            padding-top:25px;
+            .book-design{
+                opacity: 0.8;
+            }
+            .book-title{
+                font:bolder;
+            }
+            .book-price-info{
+                padding-top:10px;
+                //border-right: 1px solid lightgray;
+                @media(max-width:600px){
+                    border-right: 0px;
+                }
+                .cut-price{
+                    text-decoration:line-through;
+                    margin:auto 3px;
+                    font-size: 15px;
+                    opacity: 0.8;
+                }
+                .real-price{
+                    margin:auto 3px;
+                    font-size: 18px;
+                    color:$money-theme;
+                }
+                .price-off{
+                    margin:auto 3px;
+                    background-color: rgb(189, 0, 4);
+                    font-weight: 500;
+                    color:white;
+                    padding: 4px 8px;
+                    font-size: 18px;
+                    border-radius: 4px;
+                }
+            }
+            .book-img{
+                // border-right: 1px solid lightgray;
+                overflow:hidden;
+                position: relative;
+               
+                .shop-strip{
+                    top:calc(50% - 30px);
+                    left:calc(50% - 35px);
+                    z-index: 22;
+                    position: absolute;
+                    
+                    transition:1s;
+                    text-align: center;
+                    width:70px;
+                    background: rgba(255,255,255,0.9);
+                    opacity: 0;
+                    height:0;
+                    transition: 0.5s;
+                    overflow: hidden;
+                    margin:auto;
+                    i{  
+                        color:$main-theme;
+                        font-size: 50px;
+                        width:100%;
+                        height: 100%;
+                        opacity:1;
+                        transition:.5s;
+                        padding-top:5px;
+                        padding-bottom:5px;
+                        
+                    }
+                    &:hover{
+                        background:$main-theme;
+                        opacity:0.7;
+                        i{
+                            color:white;
+                        }   
+                    }
+                    &:active i{
+
+                        transform:rotateY(-180deg)
+                    }
+                    
+                }
+                
+                img{
+                    max-width: 100%;
+                    //width: 190px;
+                    height: 270px;
+                    text-align: center;
+                    margin:0 auto;
+                    transition:transform 0.4s;
+                    // &:hover{
+                    //     transform: scale(1.1)
+                    // }
+                    
+                }
+                &:hover{
+                   
+                    img{
+                        transform: scale(1.1)
+                    }
+                    .shop-strip{
+                        height:60px;
+                        i{
+                            height:20px;
+                        }
+                        opacity: 1;
+                    }
+                    
+                }
+                @media(max-width:600px){
+                    border-right:0px;
+                }
+                border-right:1px solid lightgrey;
+                @media(max-width:992px){
+                    border-right:0px solid lightgrey;
+                }
+               
+            }
+        }
+    }
+    .sell-page-crousal-inner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .sameview{
+            z-index: 1;
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+.slick-slide>div>div:focus { outline: none !important; }
+.slick-slide:focus { outline: none !important; }

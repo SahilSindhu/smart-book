@@ -8,7 +8,7 @@ class SecondaryFooter extends Component{
                         
                         <div className="col-xs-12 col-sm-6 col-md-3 address-info">
                         <div className="footer-logo">
-                            <img src={require('../../../assets/img/logo_footer.png')} alt="img" />
+                            <img src={require('../../../../../assets/img/logo_footer.png')} alt="img" />
                         </div>
                         <div className="address">
                             <p>Address:<span>Lorem ipsum dolor sit amet consectetur.</span></p>
