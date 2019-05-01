@@ -64,7 +64,9 @@ class Home extends Component{
         return(
                <>
                 <Topstrip />
-                <Header stateValue={this.state} handleIncrement={this.increment} handleDecriment={this.decriment}/>
+                <Header stateValue={this.state}
+                        handleIncrement={this.increment} 
+                        handleDecriment={this.decriment}/>
                 <LandingPage />
                 <BottomBannerStrip />
                 <Mosiac />

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './Mainfooter.scss'
+import './Mainfooter.scss';
+import {ProductConsumer} from '../../../../Shared/Context'
 class Mainfooter extends Component{
     render(){
         return(
@@ -10,6 +11,11 @@ class Mainfooter extends Component{
                     <div className="footer-para">
                         <p>suspandise um avtoer gause thee .Menu span rise hokage. tu main raikage the rise</p>
                     </div>
+                    <ProductConsumer>
+                        {
+                            (hello)=>{return(<h1>{hello}</h1>)}
+                        }
+                    </ProductConsumer>
                     <div className="footer-payment-options">
                         <img src={require('../../../../../assets/img/payment.png')}alt="img" />
                     </div>
